@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sky"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="206dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/enter_city"
+        android:textColor="#E5E5E9"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="402dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="56dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_city"
+        android:inputType="textPersonName"
+        android:textColor="#D9D3E2"
+        android:textColorHint="#BFD1C0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="135dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="48dp"
+        android:background="#D4CFEB"
+        android:text="@string/get_weather"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/weatherInfo"
+        android:layout_width="385dp"
+        android:layout_height="243dp"
+        android:textColor="#EDE6EE"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
