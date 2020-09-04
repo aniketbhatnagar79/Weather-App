@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
                imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
                 DownloadTask task=new DownloadTask();
-                task.execute("http://openweathermap.org/data/2.5/weather?q="+editText.getText()+"&appid=b6907d289e10d714a6e88b30761fae22");
+                task.execute("http://openweathermap.org/data/2.5/weather?q="+editText.getText()+"&appid=439d4b804bc8187953eb36d2a8c26a02");
 
             }
         });
